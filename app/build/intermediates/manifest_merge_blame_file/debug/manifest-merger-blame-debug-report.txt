@@ -1,0 +1,369 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adarsh.FoodDeliveryApp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:6:22-64
+12
+13    <!-- Include required permissions for Google Maps API to run. -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+14-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:22-76
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+19
+20    <queries>
+20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+21
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+24    </queries>
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+26-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:26:5-68
+26-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:26:22-65
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:28:5-82
+27-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:28:22-79
+28    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+28-->[com.google.android.gms:play-services-measurement-api:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/470f339dfd8cce0ad1243f829a1218f9/transformed/jetified-play-services-measurement-api-20.1.1/AndroidManifest.xml:25:5-79
+28-->[com.google.android.gms:play-services-measurement-api:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/470f339dfd8cce0ad1243f829a1218f9/transformed/jetified-play-services-measurement-api-20.1.1/AndroidManifest.xml:25:22-76
+29    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+29-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:26:5-110
+29-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:26:22-107
+30
+31    <application
+31-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:8:5-71:19
+32        android:allowBackup="true"
+32-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:9:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.6.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4e957a83bc7a9473fd32bbb8b429fe48/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:10:9-43
+37        android:label="@string/app_name"
+37-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:11:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:12:9-54
+39        android:supportsRtl="true"
+39-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:13:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.FoodOrderAndDeliveryAppKotlin" >
+41-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:14:9-67
+42        <meta-data
+42-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:16:9-18:48
+43            android:name="com.google.firebase.messaging.default_notification_icon"
+43-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:17:13-83
+44            android:resource="@drawable/img" />
+44-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:18:13-45
+45        <!--
+46             Set color used with incoming notification messages. This is used when no color is set for the incoming
+47             notification message. See README(https://goo.gl/6BKBk7) for more.
+48        -->
+49        <meta-data
+49-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:21:9-23:52
+50            android:name="com.google.firebase.messaging.default_notification_color"
+50-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:22:13-84
+51            android:resource="@color/purple_700" />
+51-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:23:13-49
+52
+53        <activity
+53-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:24:9-26:40
+54            android:name="com.adarsh.FoodDeliveryApp.DeliveryAgent"
+54-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:25:13-68
+55            android:exported="false" />
+55-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:26:13-37
+56        <activity
+56-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:27:9-29:39
+57            android:name="com.adarsh.FoodDeliveryApp.SuccessOrderActivity"
+57-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:28:13-75
+58            android:exported="true" />
+58-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:29:13-36
+59        <activity
+59-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:30:9-32:39
+60            android:name="com.adarsh.FoodDeliveryApp.LoggedIn"
+60-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:31:13-63
+61            android:exported="true" />
+61-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:32:13-36
+62        <activity
+62-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:33:9-35:39
+63            android:name="com.adarsh.FoodDeliveryApp.LoginActivity"
+63-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:34:13-68
+64            android:exported="true" />
+64-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:35:13-36
+65        <activity
+65-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:36:9-38:39
+66            android:name="com.adarsh.FoodDeliveryApp.SignupActivity"
+66-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:37:13-69
+67            android:exported="true" />
+67-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:38:13-36
+68        <activity
+68-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:39:9-41:39
+69            android:name="com.adarsh.FoodDeliveryApp.PlaceYourOrderActivity"
+69-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:40:13-77
+70            android:exported="true" />
+70-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:41:13-36
+71        <activity
+71-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:42:9-44:39
+72            android:name="com.adarsh.FoodDeliveryApp.RestaurantMenuActivity"
+72-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:43:13-77
+73            android:exported="true" />
+73-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:44:13-36
+74        <activity
+74-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:45:9-53:20
+75            android:name="com.adarsh.FoodDeliveryApp.SplashActivity"
+75-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:46:13-69
+76            android:exported="true" >
+76-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:47:13-36
+77            <intent-filter>
+77-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:48:13-52:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:49:17-69
+78-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:49:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:51:17-77
+80-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:51:27-74
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:54:9-56:39
+84            android:name="com.adarsh.FoodDeliveryApp.MainActivity"
+84-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:55:13-67
+85            android:exported="true" />
+85-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:56:13-36
+86
+87        <meta-data
+87-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:58:9-61:15
+88            android:name="com.google.android.geo.API_KEY"
+88-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:59:13-58
+89            android:value="AIzaSyDR6hHZbtZax5wotXuhLXjK4v3xYKwvQPw" />
+89-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:60:13-68
+90
+91        <service
+91-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:63:9-70:19
+92            android:name="com.demo.foodorderanddeliveryappkotlin.MyFirebaseMessagingService"
+92-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:64:13-55
+93            android:exported="false" >
+93-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:65:13-37
+94            <intent-filter>
+94-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:67:13-69:29
+95                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+95-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:68:17-78
+95-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:68:25-75
+96            </intent-filter>
+97        </service>
+98
+99        <uses-library
+99-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+100            android:name="androidx.window.extensions"
+100-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+101            android:required="false" />
+101-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+102        <uses-library
+102-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+103            android:name="androidx.window.sidecar"
+103-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+104            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+104-->[androidx.window:window:1.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/327c838e3a835ca68c4a739d2cdf614d/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+105        <uses-library
+105-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+106            android:name="org.apache.http.legacy"
+106-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+107            android:required="false" />
+107-->[com.google.android.gms:play-services-maps:18.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/c6673d5fe8c93ea274c064fbbbc07531/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+108
+109        <service
+109-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:26:9-32:19
+110            android:name="com.google.firebase.components.ComponentDiscoveryService"
+110-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:27:13-84
+111            android:directBootAware="true"
+111-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+112            android:exported="false" >
+112-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:28:13-37
+113            <meta-data
+113-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:29:13-31:85
+114                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+114-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:30:17-126
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/403d745f91593d17ceb385643fedbfae/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:31:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:55:13-57:85
+117                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+117-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:56:17-119
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:57:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-analytics-ktx:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/16fb5a7fe9bfcae5c5bc527dd42124b7/transformed/jetified-firebase-analytics-ktx-20.1.1/AndroidManifest.xml:11:13-13:85
+120                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+120-->[com.google.firebase:firebase-analytics-ktx:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/16fb5a7fe9bfcae5c5bc527dd42124b7/transformed/jetified-firebase-analytics-ktx-20.1.1/AndroidManifest.xml:12:17-126
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-analytics-ktx:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/16fb5a7fe9bfcae5c5bc527dd42124b7/transformed/jetified-firebase-analytics-ktx-20.1.1/AndroidManifest.xml:13:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/aef2fa388fa8096e2dd27897b82a18cb/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:15:13-17:85
+123                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+123-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/aef2fa388fa8096e2dd27897b82a18cb/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:16:17-113
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/aef2fa388fa8096e2dd27897b82a18cb/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:17:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/91b40b88def3bd4f3b678fc906af6995/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:28:13-30:85
+126                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+126-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/91b40b88def3bd4f3b678fc906af6995/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:29:17-115
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/91b40b88def3bd4f3b678fc906af6995/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:30:17-82
+128            <meta-data
+128-->[com.google.android.gms:play-services-measurement-api:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/470f339dfd8cce0ad1243f829a1218f9/transformed/jetified-play-services-measurement-api-20.1.1/AndroidManifest.xml:31:13-33:85
+129                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+129-->[com.google.android.gms:play-services-measurement-api:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/470f339dfd8cce0ad1243f829a1218f9/transformed/jetified-play-services-measurement-api-20.1.1/AndroidManifest.xml:32:17-139
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.android.gms:play-services-measurement-api:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/470f339dfd8cce0ad1243f829a1218f9/transformed/jetified-play-services-measurement-api-20.1.1/AndroidManifest.xml:33:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-installations:17.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/04cc560961cfd55e66891f138c96cdce/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+132                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+132-->[com.google.firebase:firebase-installations:17.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/04cc560961cfd55e66891f138c96cdce/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-installations:17.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/04cc560961cfd55e66891f138c96cdce/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+134        </service>
+135
+136        <receiver
+136-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:31:9-38:20
+137            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+137-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:32:13-78
+138            android:exported="true"
+138-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:33:13-36
+139            android:permission="com.google.android.c2dm.permission.SEND" >
+139-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:34:13-73
+140            <intent-filter>
+140-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:35:13-37:29
+141                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+141-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:36:17-81
+141-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:36:25-78
+142            </intent-filter>
+143        </receiver>
+144        <!--
+145             FirebaseMessagingService performs security checks at runtime,
+146             but set to not exported to explicitly avoid allowing another app to call it.
+147        -->
+148        <service
+148-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:44:9-51:19
+149            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+149-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:45:13-82
+150            android:directBootAware="true"
+150-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:46:13-43
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:23.0.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/1afae886bab8903f6b868e8e90d5151c/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:47:13-37
+152            <intent-filter android:priority="-500" >
+152-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:67:13-69:29
+153                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+153-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:68:17-78
+153-->/Users/ar-adarsh.nln/Documents/untitled folder/FoodDeliveryApp/app/src/main/AndroidManifest.xml:68:25-75
+154            </intent-filter>
+155        </service>
+156
+157        <activity
+157-->[com.google.android.gms:play-services-base:18.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/18bcbea718e4275b2eeb72670e4ccb87/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+158            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+158-->[com.google.android.gms:play-services-base:18.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/18bcbea718e4275b2eeb72670e4ccb87/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+159            android:exported="false"
+159-->[com.google.android.gms:play-services-base:18.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/18bcbea718e4275b2eeb72670e4ccb87/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+160-->[com.google.android.gms:play-services-base:18.0.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/18bcbea718e4275b2eeb72670e4ccb87/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+161
+162        <provider
+162-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+163            android:name="com.google.firebase.provider.FirebaseInitProvider"
+163-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+164            android:authorities="com.adarsh.FoodDeliveryApp.firebaseinitprovider"
+164-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+165            android:directBootAware="true"
+165-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+166            android:exported="false"
+166-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+167            android:initOrder="100" />
+167-->[com.google.firebase:firebase-common:20.1.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/46be7e38bc9b9125347486e49964aaea/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+168
+169        <receiver
+169-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:29:9-33:20
+170            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+170-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:30:13-85
+171            android:enabled="true"
+171-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:31:13-35
+172            android:exported="false" >
+172-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:32:13-37
+173        </receiver>
+174
+175        <service
+175-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:35:9-38:40
+176            android:name="com.google.android.gms.measurement.AppMeasurementService"
+176-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:36:13-84
+177            android:enabled="true"
+177-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:37:13-35
+178            android:exported="false" />
+178-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:38:13-37
+179        <service
+179-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:39:9-43:72
+180            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+180-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:40:13-87
+181            android:enabled="true"
+181-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:41:13-35
+182            android:exported="false"
+182-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:42:13-37
+183            android:permission="android.permission.BIND_JOB_SERVICE" />
+183-->[com.google.android.gms:play-services-measurement:20.1.1] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/4305d3dbfb8fba4d3eca3e6f1e594a5e/transformed/jetified-play-services-measurement-20.1.1/AndroidManifest.xml:43:13-69
+184
+185        <meta-data
+185-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/8461ca748eb90c075543f18e8d1cd511/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+186            android:name="com.google.android.gms.version"
+186-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/8461ca748eb90c075543f18e8d1cd511/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+187            android:value="@integer/google_play_services_version" />
+187-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/8461ca748eb90c075543f18e8d1cd511/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+188
+189        <service
+189-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:29:9-35:19
+190            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+190-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:30:13-103
+191            android:exported="false" >
+191-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:31:13-37
+192            <meta-data
+192-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:32:13-34:39
+193                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+193-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:33:17-94
+194                android:value="cct" />
+194-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/9523b0efa6f7c7f342c586b6c13a95cf/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:34:17-36
+195        </service>
+196        <service
+196-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:26:9-30:19
+197            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+197-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:27:13-117
+198            android:exported="false"
+198-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:28:13-37
+199            android:permission="android.permission.BIND_JOB_SERVICE" >
+199-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:29:13-69
+200        </service>
+201
+202        <receiver
+202-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:32:9-34:40
+203            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+203-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:33:13-132
+204            android:exported="false" />
+204-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ar-adarsh.nln/.gradle/caches/transforms-3/063d0f84f67e45de0ecccc65110c67cf/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:34:13-37
+205    </application>
+206
+207</manifest>
